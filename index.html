@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JGTech Gear — add-on packs for backcountry hunters</title>
-<meta name="description" content="JGTech Gear builds expansion and add-on packs for backcountry hunters, cut and sewn one at a time in Colorado from technical composite fabrics. First run in progress.">
+<meta name="description" content="JGTech Gear builds expansion packs, load sling dry bags and rifle covers that add capacity to the hunting pack frame you already own. Cut and sewn one at a time in Colorado.">
 <link rel="canonical" href="https://jgtechgear.com/">
 <meta property="og:title" content="JGTech Gear">
 <meta property="og:description" content="Expansion and add-on packs for backcountry hunters, cut and sewn one at a time in Colorado.">
@@ -50,7 +50,15 @@ h2{margin:0;font-weight:700;font-size:40px;line-height:1;letter-spacing:.03em}
 .cols>div{display:flex;flex-direction:column;gap:10px}
 .num{font-weight:700;font-size:22px;color:var(--accent)}
 h3{margin:0;font-size:21px;font-weight:600}
-.cols p{margin:0;color:var(--soft);text-wrap:pretty}
+.cols p,.made p,.keep p{margin:0;color:var(--soft);text-wrap:pretty}
+.cols{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.keep{display:flex;flex-direction:column;gap:16px;padding:40px;border:1px solid var(--rule);background:rgba(20,28,23,.72)}
+.keep h2{font-size:clamp(36px,5vw,56px)}
+.keep p{max-width:680px;font-size:20px}
+.made{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:40px;padding-top:40px;border-top:1px solid var(--rule)}
+.made>div{display:flex;flex-direction:column;gap:10px}
+footer .wrap>div{max-width:760px}
+@media (max-width:520px){.keep{padding:24px}}
 footer{position:relative;margin-top:auto;border-top:1px solid var(--rule)}
 footer .wrap{padding-top:28px;padding-bottom:28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:15px;color:var(--muted)}
 footer a{padding:12px 0}
@@ -86,11 +94,9 @@ footer a{padding:12px 0}
 <section class="hero">
 <div class="eyebrow">First run in progress</div>
 <h1 class="cond">Add-on packs for the miles past the trailhead.</h1>
-<p class="lede">Expansion and add-on packs for backcountry hunters, cut and sewn one at a time in Colorado from technical composite fabrics.</p>
+<p class="lede">Expansion packs and add-ons that mount to the frame you already carry, including KUIU and Mystery Ranch. Cut and sewn one at a time in Colorado from technical composite fabrics.</p>
 <div class="notify">
-<a class="btn cond" href="mailto:hello@jgtechgear.com?subject=Launch%20notice&amp;body=Add%20me%20to%20the%20JGTech%20Gear%20launch%20list.">Get the launch notice</a>
-<div class="fine">One email when the first run is ready. Nothing else.</div>
-</div>
+<a class="btn cond" href="mailto:hello@jgtechgear.com?subject=Launch%20notice&amp;body=Add%20me%20to%20the%20JGTech%20Gear%20launch%20list.">Get the launch notice</a></div>
 </section>
 
 <dl class="strip">
@@ -99,24 +105,46 @@ footer a{padding:12px 0}
 <div><dt>Made in</dt><dd class="cond">Colorado, USA</dd></div>
 </dl>
 
+<section class="keep">
+<div class="eyebrow">Older frame?</div>
+<h2 class="cond">Keep the frame. Add the room.</h2>
+<p>If the bag built for your version of the frame is no longer sold, you shouldn't have to buy a whole new frame-and-bag combo to carry more. Our expansion packs add capacity to the frame you already trust.</p>
+</section>
+
 <section class="bench">
 <h2 class="cond">On the bench</h2>
 <div class="cols">
 <div>
 <div class="num cond">01</div>
-<h3>Expansion and add-on packs</h3>
-<p>Extra capacity that attaches to the frame pack you already hunt with, for the days the load grows past what you planned.</p>
+<h3>Expansion packs</h3>
+<p>Extra capacity for KUIU and Mystery Ranch frames: room to stretch the trip by a few days, or to carry the bulky cold-weather layers late season demands.</p>
 </div>
 <div>
 <div class="num cond">02</div>
+<h3>Load sling dry bags</h3>
+<p>Bulky, light gear like meals and clothes rides in the load sling, so your hydration reservoir can sit directly against the frame and the load stays balanced.</p>
+</div>
+<div>
+<div class="num cond">03</div>
+<h3>Rifle covers</h3>
+<p>Protection for the rifle on the pack-in, in the works alongside the packs.</p>
+</div>
+<div>
+<div class="num cond">04</div>
+<h3>Complementary camo</h3>
+<p>Our own camo pattern, designed to blend in alongside KUIU's patterns so an add-on looks like it belongs on your pack.</p>
+</div>
+</div>
+</section>
+
+<section class="made">
+<div>
 <h3>Technical composite fabrics</h3>
 <p>Built from current laminates and composites chosen for weight, weather and abrasion.</p>
 </div>
 <div>
-<div class="num cond">03</div>
 <h3>Sewn in-house</h3>
-<p>Every piece is patterned, cut and sewn by the maker on an industrial machine. No contract factory, no minimum-order shortcuts.</p>
-</div>
+<p>Every piece is patterned, cut and sewn by the maker on an industrial machine. No contract factory.</p>
 </div>
 </section>
 
@@ -124,7 +152,7 @@ footer a{padding:12px 0}
 
 <footer>
 <div class="wrap">
-<div>© 2026 JG Technologies LLC. JGTech Gear is a brand of JG Technologies LLC.</div>
+<div>© 2026 JGTech Gear. KUIU and Mystery Ranch are trademarks of their respective owners; JGTech Gear is independent and is not affiliated with or endorsed by them.</div>
 <a href="mailto:hello@jgtechgear.com">hello@jgtechgear.com</a>
 </div>
 </footer>
