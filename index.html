@@ -10,6 +10,13 @@
 <meta property="og:description" content="Expansion and add-on packs for backcountry hunters, cut and sewn one at a time in Colorado.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jgtechgear.com/">
+<meta property="og:image" content="https://jgtechgear.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
@@ -25,9 +32,9 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .wrap{position:relative;width:100%;max-width:1160px;margin:0 auto;padding-left:32px;padding-right:32px}
 .cond{font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase}
 header.wrap{padding-top:28px;padding-bottom:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.wordmark{font-weight:700;font-size:30px;letter-spacing:.06em;line-height:1}
-.wordmark span{color:var(--accent)}
+.brand{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{display:block;line-height:0;padding:4px 0}
+.logo svg{display:block;height:84px;width:auto}
 .tag{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .mail{font-size:16px;font-weight:500;padding:12px 0}
 main.wrap{padding-top:40px;padding-bottom:72px;display:flex;flex-direction:column;gap:72px}
@@ -36,7 +43,7 @@ main.wrap{padding-top:40px;padding-bottom:72px;display:flex;flex-direction:colum
 h1{margin:0;font-weight:700;font-size:clamp(48px,7vw,88px);line-height:.95;letter-spacing:.01em;text-wrap:balance}
 .lede{margin:0;max-width:520px;font-size:20px;color:var(--soft);text-wrap:pretty}
 .notify{display:flex;flex-direction:column;gap:10px;align-items:flex-start;margin-top:8px}
-.btn{display:inline-flex;align-items:center;height:52px;padding:0 28px;font-weight:700;font-size:20px;letter-spacing:.08em;color:var(--ground);background:var(--accent);border-radius:2px}
+.btn{display:inline-flex;align-items:center;min-height:52px;padding:10px 28px;line-height:1.15;font-weight:700;font-size:20px;letter-spacing:.08em;color:var(--ground);background:var(--accent);border-radius:2px}
 .btn:hover{color:var(--ground);background:#ffa35c}
 .fine{font-size:15px;color:var(--muted)}
 .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
@@ -58,10 +65,12 @@ h3{margin:0;font-size:21px;font-weight:600}
 .made{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:40px;padding-top:40px;border-top:1px solid var(--rule)}
 .made>div{display:flex;flex-direction:column;gap:10px}
 footer .wrap>div{max-width:760px}
-@media (max-width:520px){.keep{padding:24px}}
+@media (max-width:520px){.keep{padding:24px}.logo svg{height:68px}}
 footer{position:relative;margin-top:auto;border-top:1px solid var(--rule)}
 footer .wrap{padding-top:28px;padding-bottom:28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:15px;color:var(--muted)}
 footer a{padding:12px 0}
+.fb{display:flex;align-items:center;gap:18px}
+.fb .horns{flex:none;height:44px;width:auto}
 </style>
 </head>
 <body>
@@ -83,7 +92,7 @@ footer a{padding:12px 0}
 
 <header class="wrap">
 <div class="brand">
-<div class="wordmark cond">JGTech <span>Gear</span></div>
+<a class="logo" href="/" aria-label="JGTech Gear home"><svg viewBox="0 0 865.4 472.6" role="img" aria-label="JGTech Gear"><title>JGTech Gear</title><path d="M251.7 472.6H156.1C128 427.4 100.4 381.4 78.1 333C52.6 311.9 21 286.2 1 244.5C-2.8 234.9 4.8 227.3 14.4 233C25.7 238.7 37.1 246.4 48.4 250.9C43.5 231.3 40.3 211.3 39.5 191.1C37.6 147.2 46.5 100.4 70.6 63.2C91.8 30.6 125.9 6.8 164.8 1.1C194.7 -3.2 225.7 4.9 247.1 26.9C265.5 45.8 270.3 70.3 274.9 95.2C275 95.8 275.1 96.4 275.1 96.9C275.1 101.2 271.7 104.6 267.4 104.6C263.7 104.6 260.6 102 259.9 98.5C254.7 77.9 249.8 56.4 232.9 42C211.9 24 183.2 22.6 158.2 32.7C125.7 45.8 106.5 73.4 98.5 106.7C89.7 143.5 93.5 182.3 104.3 218.2C116.4 258.8 136.9 296.3 158.9 332.2C183.7 372.7 210.7 411.7 237.5 450.8C242.9 458.8 247.6 465.9 251.7 472.6ZM709.3 472.6H613.7C617.8 465.9 622.4 458.8 627.9 450.8C654.7 411.7 681.7 372.7 706.5 332.2C728.5 296.3 749 258.8 761.1 218.2C771.9 182.3 775.7 143.5 766.9 106.7C758.9 73.4 739.7 45.8 707.1 32.7C682.2 22.6 653.5 24 632.4 42C615.5 56.4 610.7 77.9 605.5 98.5C604.8 102 601.7 104.6 598 104.6C593.7 104.6 590.3 101.2 590.3 96.9C590.3 96.4 590.4 95.8 590.5 95.2C595.1 70.3 599.9 45.8 618.2 26.9C639.7 4.9 670.7 -3.2 700.6 1.1C739.5 6.8 773.6 30.6 794.7 63.2C818.9 100.4 827.8 147.2 825.9 191.1C825 211.3 821.9 231.3 817 250.9C828.3 246.4 839.6 238.7 851 233C860.5 227.3 868.2 234.9 864.4 244.5C844.4 286.2 812.8 311.9 787.3 333C764.9 381.4 737.4 427.4 709.3 472.6Z" fill="#c9a26a"/><path d="M629.1 160.6H645.8Q646.5 160.6 647 161.1Q647.5 161.6 647.5 162.3V258.9Q647.5 259.6 647 260.1Q646.5 260.6 645.8 260.6H629.1Q628.4 260.6 627.9 260.1Q627.4 259.6 627.4 258.9V219.9Q627.4 219.2 626.7 219.2H612.4Q611.7 219.2 611.7 219.9V258.9Q611.7 259.6 611.2 260.1Q610.7 260.6 610 260.6H593.3Q592.5 260.6 592 260.1Q591.5 259.6 591.5 258.9V162.3Q591.5 161.6 592 161.1Q592.5 160.6 593.3 160.6H610Q610.7 160.6 611.2 161.1Q611.7 161.6 611.7 162.3V201.2Q611.7 201.9 612.4 201.9H626.7Q627.4 201.9 627.4 201.2V162.3Q627.4 161.6 627.9 161.1Q628.4 160.6 629.1 160.6ZM293.4 234.7V186.5Q293.4 174.2 301.2 166.8Q309 159.5 321.8 159.5Q334.7 159.5 342.5 166.9Q350.4 174.3 350.4 186.6V192Q350.4 192.7 349.9 193.2Q349.4 193.7 348.7 193.7H332Q331.3 193.7 330.8 193.2Q330.3 192.7 330.3 192V186.3Q330.3 182 328 179.4Q325.7 176.7 321.8 176.7Q318.1 176.7 315.8 179.4Q313.5 182 313.5 186.3V234.9Q313.5 239.2 315.8 241.8Q318.1 244.5 321.8 244.5Q325.7 244.5 328 241.8Q330.3 239.2 330.3 234.9V223.5Q330.3 222.7 329.5 222.7H323.3Q322.5 222.7 322 222.2Q321.5 221.7 321.5 221V208.3Q321.5 207.6 322 207.1Q322.5 206.6 323.3 206.6H348.7Q349.4 206.6 349.9 207.1Q350.4 207.6 350.4 208.3V234.7Q350.4 247 342.5 254.4Q334.7 261.7 321.8 261.7Q309 261.7 301.2 254.4Q293.4 247 293.4 234.7ZM496.3 177.9H466.4Q465.7 177.9 465.7 178.6V201.2Q465.7 201.9 466.4 201.9H483.5Q484.3 201.9 484.8 202.4Q485.3 202.9 485.3 203.6V217.5Q485.3 218.2 484.8 218.7Q484.3 219.2 483.5 219.2H466.4Q465.7 219.2 465.7 219.9V242.6Q465.7 243.3 466.4 243.3H496.3Q497 243.3 497.5 243.8Q498 244.3 498 245V258.9Q498 259.6 497.5 260.1Q497 260.6 496.3 260.6H447.3Q446.5 260.6 446 260.1Q445.5 259.6 445.5 258.9V162.3Q445.5 161.6 446 161.1Q446.5 160.6 447.3 160.6H496.3Q497 160.6 497.5 161.1Q498 161.6 498 162.3V176.2Q498 176.9 497.5 177.4Q497 177.9 496.3 177.9ZM515.3 233.6V187.3Q515.3 174.6 523 167Q530.8 159.5 543.7 159.5Q556.7 159.5 564.5 167Q572.3 174.6 572.3 187.3V188.9Q572.3 189.6 571.8 190.1Q571.3 190.6 570.5 190.6L553.8 191.3Q552.1 191.3 552.1 189.7V186Q552.1 181.9 549.8 179.3Q547.5 176.7 543.7 176.7Q540 176.7 537.7 179.3Q535.4 181.9 535.4 186V235.3Q535.4 239.5 537.7 242Q540 244.5 543.7 244.5Q547.5 244.5 549.8 242Q552.1 239.5 552.1 235.3V231.5Q552.1 230.7 552.6 230.2Q553.1 229.7 553.8 229.7L570.5 230.5Q571.3 230.5 571.8 231Q572.3 231.5 572.3 232.2V233.6Q572.3 246.5 564.4 254.1Q556.5 261.7 543.7 261.7Q530.8 261.7 523 254.1Q515.3 246.5 515.3 233.6ZM217.8 234.9V225Q217.8 224.3 218.3 223.8Q218.8 223.3 219.5 223.3H236.3Q237 223.3 237.5 223.8Q238 224.3 238 225V235.2Q238 239.3 240.1 241.9Q242.3 244.5 245.8 244.5Q249.5 244.5 251.8 241.9Q254 239.3 254 235.2V162.3Q254 161.6 254.5 161.1Q255 160.6 255.7 160.6H272.4Q273.1 160.6 273.6 161.1Q274.1 161.6 274.1 162.3V234.9Q274.1 247 266.3 254.4Q258.5 261.7 245.8 261.7Q233.3 261.7 225.5 254.4Q217.8 247 217.8 234.9ZM427.3 162.3V176.2Q427.3 176.9 426.8 177.4Q426.3 177.9 425.5 177.9H407.7Q407 177.9 407 178.6V258.9Q407 259.6 406.5 260.1Q406 260.6 405.3 260.6H388.5Q387.8 260.6 387.3 260.1Q386.8 259.6 386.8 258.9V178.6Q386.8 177.9 386.1 177.9H369Q368.3 177.9 367.8 177.4Q367.3 176.9 367.3 176.2V162.3Q367.3 161.6 367.8 161.1Q368.3 160.6 369 160.6H425.5Q426.3 160.6 426.8 161.1Q427.3 161.6 427.3 162.3Z" fill="#ece6d6"/><path d="M224.8 282.6H640.5C644.4 282.6 647.5 285.7 647.5 289.6V381.6C647.5 385.5 644.4 388.6 640.5 388.6H224.8C221 388.6 217.8 385.5 217.8 381.6V289.6C217.8 285.7 221 282.6 224.8 282.6ZM541.8 372.5Q542.1 373.6 543.3 373.6H556.4Q557.5 373.6 557.5 372.5L557.4 372.1L547.5 340.1Q547.3 339.8 547.5 339.7Q547.6 339.5 547.8 339.4Q552.1 336.7 554.6 331.8Q557 326.9 557 320.5Q557 313.8 554.5 308.6Q551.9 303.4 547.2 300.5Q542.6 297.6 536.6 297.6H514.7Q514.1 297.6 513.7 298Q513.4 298.4 513.4 298.9V372.3Q513.4 372.8 513.7 373.2Q514.1 373.6 514.7 373.6H527.4Q527.9 373.6 528.3 373.2Q528.7 372.8 528.7 372.3V342.7Q528.7 342.1 529.2 342.1H532.9Q533.2 342.1 533.4 342.6ZM307.8 354Q307.8 363.3 313.8 368.9Q319.7 374.5 329.4 374.5Q339.2 374.5 345.2 368.9Q351.2 363.3 351.2 354V333.9Q351.2 333.3 350.8 332.9Q350.4 332.6 349.9 332.6H330.5Q330 332.6 329.6 332.9Q329.2 333.3 329.2 333.9V343.5Q329.2 344.1 329.6 344.5Q330 344.8 330.5 344.8H335.3Q335.8 344.8 335.8 345.4V354.1Q335.8 357.3 334.1 359.3Q332.4 361.3 329.4 361.3Q326.6 361.3 324.9 359.3Q323.1 357.3 323.1 354.1V317.1Q323.1 313.9 324.9 311.9Q326.6 309.9 329.4 309.9Q332.4 309.9 334.1 311.9Q335.8 313.9 335.8 317.1V321.5Q335.8 322 336.2 322.4Q336.6 322.8 337.1 322.8H349.9Q350.4 322.8 350.8 322.4Q351.2 322 351.2 321.5V317.4Q351.2 308 345.2 302.4Q339.2 296.7 329.4 296.7Q319.7 296.7 313.8 302.3Q307.8 307.9 307.8 317.3ZM474.2 372.4Q474.3 373.6 475.6 373.6H488.6Q489.8 373.6 489.8 372.6L489.7 372.2L473.8 298.8Q473.6 297.6 472.4 297.6H457.8Q456.6 297.6 456.4 298.8L440.4 372.2Q440.2 372.9 440.5 373.3Q440.8 373.6 441.5 373.6H454.2Q455.5 373.6 455.6 372.4L457.3 362Q457.3 361.4 458 361.4H471.8Q472.4 361.4 472.4 362ZM415.5 310.7Q416.1 310.7 416.5 310.4Q416.8 310 416.8 309.4V298.9Q416.8 298.4 416.5 298Q416.1 297.6 415.5 297.6H378.3Q377.8 297.6 377.4 298Q377 298.4 377 298.9V372.3Q377 372.8 377.4 373.2Q377.8 373.6 378.3 373.6H415.5Q416.1 373.6 416.5 373.2Q416.8 372.8 416.8 372.3V361.8Q416.8 361.2 416.5 360.8Q416.1 360.5 415.5 360.5H392.8Q392.3 360.5 392.3 359.9V342.7Q392.3 342.1 392.8 342.1H405.9Q406.4 342.1 406.8 341.7Q407.2 341.4 407.2 340.8V330.3Q407.2 329.7 406.8 329.4Q406.4 329 405.9 329H392.8Q392.3 329 392.3 328.4V311.3Q392.3 310.7 392.8 310.7ZM528.7 311.3Q528.7 310.7 529.2 310.7H534.1Q537.5 310.7 539.6 313.4Q541.7 316.1 541.7 320.6Q541.7 325.1 539.6 327.7Q537.5 330.4 534.1 330.4H529.2Q528.7 330.4 528.7 329.8ZM459.9 349.6Q459.5 349.6 459.5 349.1L464.4 319.4Q464.5 319.1 464.7 319.1Q464.9 319.1 465 319.4L470.1 349.1Q470.2 349.3 470.1 349.5Q470 349.6 469.7 349.6Z" fill="#f47c20"/></svg></a>
 <div class="tag">Colorado · Est. 2026</div>
 </div>
 <a class="mail" href="mailto:hello@jgtechgear.com">hello@jgtechgear.com</a>
@@ -152,7 +161,7 @@ footer a{padding:12px 0}
 
 <footer>
 <div class="wrap">
-<div>© 2026 JGTech Gear. KUIU and Mystery Ranch are trademarks of their respective owners; JGTech Gear is independent and is not affiliated with or endorsed by them.</div>
+<div class="fb"><svg class="horns" viewBox="0 0 406.7 310.8" aria-hidden="true"><path d="M309.8 310.8H228.9C231.3 306.8 234.2 302.4 237.9 297C255.1 272.1 272.5 247.4 288.8 221.9C303.7 198.6 317.9 174.5 327.1 148.2C335.1 125.4 338.9 100.7 334.7 76.7C330.9 55.2 320.3 36.7 299.9 27.3C284.2 20.2 265.8 20.2 252 31.5C241.1 40.4 238 54.1 234.5 67.1C233.9 70.1 231.3 72.3 228.1 72.3C224.5 72.3 221.6 69.4 221.6 65.8C221.6 65.3 221.7 64.8 221.8 64.3C224.7 47.7 227.8 31.4 240 18.7C254.3 3.6 275.3 -2.1 295.6 0.7C322 4.2 345.2 20.1 359.9 41.9C376.6 66.7 383.3 98.2 382.4 127.8C382.1 138.8 380.7 149.7 378.6 160.4C384.4 157.4 390 154 395.6 150.8C403.1 147.1 409.4 153.3 405.6 160.8C394.9 183.2 378.1 199.5 362.1 212.7C360.7 216.1 359.2 219.5 357.8 222.8C344.1 253.3 327.2 282.4 309.8 310.8ZM177.8 310.8H96.9C79.5 282.4 62.7 253.3 49 222.8C47.5 219.5 46 216.1 44.6 212.7C28.7 199.5 11.9 183.2 1.1 160.8C-2.6 153.3 3.6 147.1 11.1 150.8C16.8 154 22.4 157.4 28.2 160.4C26 149.7 24.7 138.8 24.4 127.8C23.5 98.2 30.1 66.7 46.8 41.9C61.5 20.1 84.8 4.2 111.2 0.7C131.4 -2.1 152.4 3.6 166.8 18.7C178.9 31.4 182.1 47.7 184.9 64.3C185.1 64.8 185.1 65.3 185.1 65.8C185.1 69.4 182.2 72.3 178.6 72.3C175.5 72.3 172.8 70.1 172.2 67.1C168.8 54.1 165.6 40.4 154.7 31.5C141 20.2 122.5 20.2 106.9 27.3C86.5 36.7 75.9 55.2 72 76.7C67.8 100.7 71.7 125.4 79.7 148.2C88.8 174.5 103 198.6 117.9 221.9C134.2 247.4 151.7 272.1 168.9 297C172.6 302.4 175.5 306.8 177.8 310.8Z" fill="#c9a26a" fill-rule="nonzero"/></svg><span>© 2026 JGTech Gear. KUIU and Mystery Ranch are trademarks of their respective owners; JGTech Gear is independent and is not affiliated with or endorsed by them.</span></div>
 <a href="mailto:hello@jgtechgear.com">hello@jgtechgear.com</a>
 </div>
 </footer>
